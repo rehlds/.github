@@ -61,9 +61,9 @@
 - name: "Type: 🧹 chore"
   description: "Routine tasks, maintenance, or non-user-facing changes."
   color: "FAD8C7"
-- name: "Type: ❓ question"
-  description: "Not an classical issue. Customer's question."
-  color: "C7FAD8"
+#- name: "Type: ❓ question"
+#  description: "Not an classical issue. Customer's question."
+#  color: "C7FAD8"
 
 # Status
 - name: "Status: 🖐 opened"
