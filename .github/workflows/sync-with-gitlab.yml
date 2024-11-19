@@ -1,31 +1,40 @@
-name: Automatic sync with Gitlab's read-only mirror
+name: Automatic sync with GitLab's read-only mirror
 
-on: [workflow_dispatch, push]
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '42 0 * * 0'
+  workflow_dispatch:
 
 jobs:
   mirror:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    strategy:
+      matrix:
+        repo:
+          - {github: "https://github.com/rehlds/.github.git", gitlab: "git@gitlab.com:rehlds/dot-github.git"}
+          - {github: "https://github.com/rehlds/rehlds.git", gitlab: "git@gitlab.com:rehlds/rehlds.git"}
 
-      - name: Set up SSH key for Runner
+    steps:
+      - name: Set up SSH key
         env:
-          SSH_KEY: ${{ secrets.GITLAB_DEPLOY_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.GITLAB_DEPLOY_KEY }}
         run: |
           mkdir -p ~/.ssh
-          echo "$SSH_KEY" > ~/.ssh/id_ed25519
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-          ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
+          ssh-keyscan -t rsa,ed25519 github.com >> ~/.ssh/known_hosts
+          ssh-keyscan -t rsa,ed25519 gitlab.com >> ~/.ssh/known_hosts
 
-      - name: Clone repository from GitHub as mirror and push to Gitlab
-        env:
-          REPO_ORIGINAL: "https://github.com/rehlds/.github.git"
-          REPO_TARGET:   "git@gitlab.com:rehlds/dot-github.git"
+      - name: Clone repository as mirror
         run: |
-          git clone --mirror "$REPO_ORIGINAL" repo-mirror
+          git clone --mirror ${{ matrix.repo.github }} repo-mirror
+
+      - name: Push to GitLab
+        run: |
           cd repo-mirror
-          git remote set-url origin "$REPO_TARGET"
-          git push --mirror --force
+          git remote set-url origin ${{ matrix.repo.gitlab }}
+          git push --mirror
