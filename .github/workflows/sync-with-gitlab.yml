@@ -17,6 +17,18 @@ jobs:
         repo:
           - {github: "https://github.com/rehlds/.github.git", gitlab: "git@gitlab.com:rehlds/dot-github.git"}
           - {github: "https://github.com/rehlds/rehlds.git", gitlab: "git@gitlab.com:rehlds/rehlds.git"}
+          - {github: "https://github.com/rehlds/ReGameDLL_CS.git", gitlab: "git@gitlab.com:rehlds/ReGameDLL_CS.git"}
+          - {github: "https://github.com/rehlds/metamod-r.git", gitlab: "git@gitlab.com:rehlds/metamod-r.git"}
+          - {github: "https://github.com/rehlds/reapi.git", gitlab: "git@gitlab.com:rehlds/reapi.git"}
+          - {github: "https://github.com/rehlds/rechecker.git", gitlab: "git@gitlab.com:rehlds/rechecker.git"}
+          - {github: "https://github.com/rehlds/resemiclip.git", gitlab: "git@gitlab.com:rehlds/resemiclip.git"}
+          - {github: "https://github.com/rehlds/reunion.git", gitlab: "git@gitlab.com:rehlds/reunion.git"}
+          - {github: "https://github.com/rehlds/revoice.git", gitlab: "git@gitlab.com:rehlds/revoice.git"}
+          - {github: "https://github.com/rehlds/relocalizebugfix.git", gitlab: "git@gitlab.com:rehlds/relocalizebugfix.git"}
+          - {github: "https://github.com/rehlds/hitboxtracker.git", gitlab: "git@gitlab.com:rehlds/hitboxtracker.git"}
+          - {github: "https://github.com/rehlds/testdemos.git", gitlab: "git@gitlab.com:rehlds/testdemos.git"}
+          - {github: "https://github.com/rehlds/rehlds.github.io.git", gitlab: "git@gitlab.com:rehlds/rehlds.github.io.git"}
+          - {github: "https://github.com/rehlds/metamod-r.org.git", gitlab: "git@gitlab.com:rehlds/metamod-r.org.git"}
 
     steps:
       - name: Set up SSH key
