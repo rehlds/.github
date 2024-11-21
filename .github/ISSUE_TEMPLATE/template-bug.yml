@@ -25,36 +25,36 @@ body:
       value: A bug happened!
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: enginever
     attributes:
       label: ReHLDS Version
       description: What version of engine are you seeing the problem on? Paste output from `version` command in console
-      render: shell
+
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: regamedllcsversion
     attributes:
       label: ReGameDLL_CS Version
       description:  What version of ReGameDLL_CS are you running? Paste output from `game version` command in console
-      render: shell
+
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: metamodrversion
     attributes:
       label: Metamod-r Version
       description: What version of Metamod-r are you running? Paste output from `meta version` command in console
-      render: shell
+
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: amxxversion
     attributes:
       label: AMX Mod X Version
       description: What version of AMX Mod X are you running? AMX Mod X < `1.9.0` are *not* supported. Paste output from `amxx version` command in console
-      render: shell
+
     validations:
       required: false
   - type: textarea
