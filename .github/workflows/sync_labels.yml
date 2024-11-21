@@ -8,8 +8,11 @@ on:
         required: true
         type: choice
         options:
+          # System
           - rehlds/.github
           - rehlds/rehlds.github.io
+          - rehlds/testdemos
+          # Projects
           - rehlds/ReHLDS
           - rehlds/ReGameDLL_CS
           - rehlds/ReAPI
@@ -20,6 +23,7 @@ on:
           - rehlds/ReFreeLook
           - rehlds/ReChecker
           # Archieved
+          - rehlds/resemiclip_old
           - rehlds/relocalizebugfix
           - rehlds/reamxmodx
           - rehlds/hitboxtracker
