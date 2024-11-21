@@ -35,5 +35,5 @@ jobs:
           manifest: .github/labels.yml
           repository: |
             ${{ inputs.repo }}
-            rehlds/.github
+
           token: ${{ secrets.REHLDS_LABELS_PAT }}
