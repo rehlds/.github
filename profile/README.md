@@ -34,12 +34,16 @@ Welcome to the official ReHLDS GitHub organization! We maintain and develop a fa
       <td>An improved version of the original HLDS engine, containing many security fixes and performance optimizations. It provides a more stable and enhanced server environment with extended API support for mods and plugins, offering better security and efficiency.</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/s1lentq/ReGameDLL_CS">ReGameDLL_CS</a><br><a href="https://github.com/s1lentq/ReGameDLL_CS/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/s1lentq/ReGameDLL_CS?include_prereleases&style=flat-square"></a><br><img src="https://img.shields.io/github/downloads/s1lentq/ReGameDLL_CS/total?style=flat-square" alt="GitHub Releases"></td>
+      <td><a href="https://github.com/rehlds/ReGameDLL_CS">ReGameDLL_CS</a><br><a href="https://github.com/rehlds/ReGameDLL_CS/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/s1lentq/ReGameDLL_CS?include_prereleases&style=flat-square"></a><br><img src="https://img.shields.io/github/downloads/s1lentq/ReGameDLL_CS/total?style=flat-square" alt="GitHub Releases"></td>
       <td>More stable (than official) version of Counter-Strike 1.6 (also Counter-Strike: Condition Zero) game library (mp.dll) with extended API for mods and plugins, enhanced (and fixed).</td>
     </tr>
     <tr>
       <td><a href="https://github.com/rehlds/reapi">ReAPI</a><br><a href="https://github.com/rehlds/reapi/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/rehlds/reapi?include_prereleases&style=flat-square"></a><br><img src="https://img.shields.io/github/downloads/rehlds/reapi/total?style=flat-square" alt="GitHub Releases"></td>
       <td>AMXModX module that provides ReHLDS, ReGameDLL, ReChecker, ReUnion, VoiceTranscoder APIs for use in <a href="https://github.com/alliedmodders/amxmodx">AMXModX</a> plugins development.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/rehlds/Metamod-R">Metamod-R</a><br><a href="https://github.com/rehlds/Metamod-R/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/rehlds/Metamod-R?include_prereleases&style=flat-square"></a><br><img src="https://img.shields.io/github/downloads/rehlds/Metamod-R/total?style=flat-square" alt="GitHub Releases"></td>
+      <td>Optimized fork of Metamod for improved plugin management and compatibility on modern HLDS-based servers.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/rehlds/resemiclip">ReSemiclip</a><br><a href="https://github.com/rehlds/resemiclip/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/rehlds/resemiclip?include_prereleases&style=flat-square"></a><br><img src="https://img.shields.io/github/downloads/rehlds/resemiclip/total?style=flat-square" alt="GitHub Releases"></td>
