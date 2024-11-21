@@ -2,6 +2,28 @@ name: Sync labels
 
 on:
   workflow_dispatch:
+    inputs:
+      repository:
+        description: 'Repository'
+        required: true
+        type: choice
+        options:
+          - rehlds/.github
+          - rehlds/rehlds.github.io
+          - rehlds/ReHLDS
+          - rehlds/ReGameDLL_CS
+          - rehlds/ReAPI
+          - rehlds/Metamod-R
+          - rehlds/ReVoice
+          - rehlds/ReUnion
+          - rehlds/ReSemiclip
+          - rehlds/ReFreeLook
+          - rehlds/ReChecker
+          # Archieved
+          - rehlds/relocalizebugfix
+          - rehlds/reamxmodx
+          - rehlds/hitboxtracker
+          - rehlds/metamod-r.org
 
 jobs:
   build:
@@ -12,7 +34,5 @@ jobs:
         with:
           manifest: .github/labels.yml
           repository: |
-            rehlds/.github
-            rehlds/relocalizebugfix
-            rehlds/resemiclip
+            ${{ inputs.repository }} 
           token: ${{ secrets.REHLDS_LABELS_PAT }}
