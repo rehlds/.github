@@ -5,11 +5,11 @@ labels: ["Engine: ⚙️ Independent", "Priority: ⚠️ medium", "OS: 💻 Inde
 body:
   - type: markdown
     attributes:
-      value: Thanks for taking the time to fill out this Task!
+      value: 💖 Thanks for taking the time to fill out this Task!
   - type: input
     id: contact-feature
     attributes:
-      label: Contact Details (optional)
+      label: 👉👈 Contact Details (optional)
       description: How can we get in touch with you if we need more info?
       placeholder: ex. email@example.com
     validations:
@@ -17,7 +17,7 @@ body:
   - type: textarea
     id: have-task
     attributes:
-      label: Tell us more about your task
+      label: 📌 Tell us more about your task
       description: Tell us what you want from the project and the developers?
       placeholder: Tell us about your task!
       value: I have an task!

@@ -8,11 +8,11 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: Thanks for taking the time to fill out this Feature request!
+      value: 💖 Thanks for taking the time to fill out this Feature request!
   - type: input
     id: contact-task
     attributes:
-      label: Contact Details (optional)
+      label: 👉👈 Contact Details (optional)
       description: How can we get in touch with you if we need more info?
       placeholder: ex. email@example.com
     validations:
@@ -20,7 +20,7 @@ body:
   - type: textarea
     id: have-idea
     attributes:
-      label: Tell us more about your idea
+      label: 💡 Tell us more about your idea
       description: Tell us what you expect from the project and the developers?
       placeholder: Tell us about your idea!
       value: I have an idea!

@@ -1,0 +1,116 @@
+name: Bug Report
+description: A generic bug report
+title: "[BUG]: "
+labels: ["Type: 🐞 bug", "Status: 🖐 available"]
+assignees:
+  - s1lentq
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details (optional)
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: A bug happened!
+    validations:
+      required: true
+  - type: input
+    id: enginever
+    attributes:
+      label: ReHLDS Version
+      description: What version of engine are you seeing the problem on? Paste output from `version` command in console
+
+    validations:
+      required: true
+  - type: input
+    id: regamedllcsversion
+    attributes:
+      label: ReGameDLL_CS Version
+      description:  What version of ReGameDLL_CS are you running? Paste output from `game version` command in console
+
+    validations:
+      required: true
+  - type: input
+    id: metamodrversion
+    attributes:
+      label: Metamod-r Version
+      description: What version of Metamod-r are you running? Paste output from `meta version` command in console
+
+    validations:
+      required: true
+  - type: input
+    id: amxxversion
+    attributes:
+      label: AMX Mod X Version
+      description: What version of AMX Mod X are you running? AMX Mod X < `1.9.0` are *not* supported. Paste output from `amxx version` command in console
+
+    validations:
+      required: false
+  - type: textarea
+    id: metalist
+    attributes:
+      label: List of Metamod plugins
+      description: Paste output from `meta list` command in console
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: amxxplugins
+    attributes:
+      label: List of AmxX plugins
+      description: Paste output of `amxx plugins` command in console
+      render: shell
+    validations:
+      required: false
+  - type: dropdown
+    id: os
+    attributes:
+      label: What OS are you seeing the problem on?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: dropdown
+    id: osver
+    attributes:
+      label: What OS version are you seeing the problem on?
+      multiple: true
+      options:
+        - Windows 7
+        - Windows 8
+        - Windows 8.1
+        - Windows 10
+        - Windows 11
+        - Ubuntu 14.x
+        - Ubuntu 16.x
+        - Ubuntu 18.x
+        - Ubuntu 20.x
+        - Ubuntu 22.x
+        - Debian 10
+        - Debian 11
+        - Debian 12
+        - Other Linux
+    validations:
+      required: true 
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: markdown
+    attributes:
+      value: Thanks for completing our form!
