@@ -3,7 +3,7 @@ name: Sync labels
 on:
   workflow_dispatch:
     inputs:
-      repository:
+      repo:
         description: 'Repository'
         required: true
         type: choice
@@ -34,5 +34,6 @@ jobs:
         with:
           manifest: .github/labels.yml
           repository: |
-            ${{ inputs.repository }} 
+            ${{ inputs.repo }}
+            rehlds/.github
           token: ${{ secrets.REHLDS_LABELS_PAT }}
