@@ -12,7 +12,7 @@
 # Resolution
 - name: "Resolution: ✂️ duplicate"
   description: "Duplicate of an existing task or issue."
-- name: "Resolution: ❇️ Resolved"
+- name: "Resolution: ❇️ resolved"
   description: "The issue resolved, but not fully closed."
 - name: "Resolution: 🚫 wontfix"
   description: "The issue will not be fixed; the task is closed."
@@ -61,9 +61,9 @@
 - name: "Type: 🧹 chore"
   description: "Routine tasks, maintenance, or non-user-facing changes."
   color: "FAD8C7"
-#- name: "Type: ❓ question"
-#  description: "Not an classical issue. Customer's question."
-#  color: "C7FAD8"
+- name: "Type: 🛑 dependency"
+  description: "Routine tasks, maintenance, or non-user-facing changes."
+  color: "C7FAD8"
 
 # Status
 - name: "Status: 🖐 available"
