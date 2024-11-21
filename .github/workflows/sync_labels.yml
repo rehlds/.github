@@ -26,7 +26,8 @@ on:
           - rehlds/metamod-r.org
 
 jobs:
-  build:
+  sync:
+    name: Sync ${{ inputs.repo }} labels
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
