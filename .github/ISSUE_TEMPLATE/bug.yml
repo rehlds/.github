@@ -1,4 +1,4 @@
-name: Bug Report
+name: 🐞 Bug Report
 description: A generic bug report
 title: "[BUG]: "
 labels: ["Type: 🐞 bug", "Status: 🖐 available"]
@@ -35,7 +35,7 @@ body:
         ➡️ Please, paste output from console command below:
         `version; game version; meta version; meta list`
          
-        ➡️ (Optional) You could also provide info about AMX Mox X (version < `1.9.0` are *not* supported!):
+        ➡️ (Optional) You could also provide info about AMX Mod X (version below `1.9.0` are *not* supported!):
         `amxx version; amxx plugins`
         
         ➡️ Your environment: OS ( 🪟 `Windows` or 🐧 `Linux`), OS Vetsion, etc.

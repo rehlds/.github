@@ -1,4 +1,4 @@
-name: Task
+name: ⚗️ Task
 description: Create some generic task for this project
 title: "[TASK]: "
 labels: ["Engine: ⚙️ Independent", "Priority: ⚠️ medium", "OS: 💻 Independent", "Status: 🖐 available", "Type: ⚗️ task"]
