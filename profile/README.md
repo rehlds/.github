@@ -6,7 +6,6 @@
 
 <p align="left">
     <a href="https://github.com/orgs/rehlds/repositories"><img alt="GitHub Org's stars" src="https://img.shields.io/github/stars/rehlds?style=flat-square"/></a>
-    <a href="https://t.me/ReHLDS_Community"><img src="https://img.shields.io/badge/any_text-Join-blue?style=flat-square&label=Telegram" /></a>
 </p>
 
 <p>
