@@ -2,8 +2,8 @@ name: 🐞 Bug Report
 description: A generic bug report
 title: "[BUG]: "
 labels: ["Type: 🐞 bug", "Status: 🖐 available"]
-assignees:
-  - s1lentq
+# assignees:
+  # - s1lentq
 body:
   - type: markdown
     attributes:

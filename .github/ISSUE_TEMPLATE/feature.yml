@@ -2,9 +2,9 @@ name: 💡 New Feature
 description: Suggest an idea for this project
 title: "[Feature request]: "
 labels: ["Engine: ⚙️ Independent", "Priority: ⚠️ medium", "OS: 💻 Independent", "Status: 🖐 available", "Type: 💡 feature request"]
-assignees:
-  - s1lentq
-  - stamepicmorg
+# assignees:
+#   - s1lentq
+#   - stamepicmorg
 body:
   - type: markdown
     attributes:
