@@ -45,24 +45,24 @@ jobs:
           ssh-keyscan -t rsa,ed25519 github.com >> ~/.ssh/known_hosts
           ssh-keyscan -t rsa,ed25519 gitlab.com >> ~/.ssh/known_hosts
 
-      - name: Clone repository as mirror
+      - name: Clone repository as bare
         run: |
-          git clone --mirror ${{ matrix.repo.github }} repo-mirror
+          git clone --bare ${{ matrix.repo.github }} repo-bare
 
       - name: Push to BitBucket
         run: |
-          cd repo-mirror
-          git remote set-url origin ${{ matrix.repo.bitbucket }}
-          git push --mirror --force
+          cd repo-bare
+          git remote add bb ${{ matrix.repo.bitbucket }}
+          git push bb --prune +refs/heads/*:refs/heads/* +refs/tags/*:refs/tags/*
 
       - name: Push to CodeBerg
         run: |
-          cd repo-mirror
-          git remote set-url origin ${{ matrix.repo.codeberg }}
-          git push --mirror --force
+          cd repo-bare
+          git remote add cb ${{ matrix.repo.codeberg }}
+          git push cb --prune +refs/heads/*:refs/heads/* +refs/tags/*:refs/tags/*
 
       - name: Push to GitLab
         run: |
-          cd repo-mirror
-          git remote set-url origin ${{ matrix.repo.gitlab }}
-          git push --mirror --force
+          cd repo-bare
+          git remote add gl ${{ matrix.repo.gitlab }}
+          git push gl --prune +refs/heads/*:refs/heads/* +refs/tags/*:refs/tags/*
