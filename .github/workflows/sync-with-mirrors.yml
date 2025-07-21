@@ -16,21 +16,21 @@ jobs:
       matrix:
         repo:
 #         - {github: "", bitbucket: "", codeberg: "", gitlab: "" }
-          - {github: "https://github.com/rehlds/.github.git", bitbucket: "git@bitbucket.org:rehlds-dev/.github.git", codeberg: "git@codeberg.org:reHLDS/.github.git",  gitlab: "git@gitlab.com:rehlds/dot-github.git"}
-          - {github: "https://github.com/rehlds/rehlds.git", bitbucket: "git@bitbucket.org:rehlds-dev/rehlds.git", codeberg: "git@codeberg.org:reHLDS/rehlds.git",  gitlab: "git@gitlab.com:rehlds/rehlds.git"}
-          - {github: "https://github.com/rehlds/ReGameDLL_CS.git", bitbucket: "git@bitbucket.org:rehlds-dev/regamedll_cs.git", codeberg: "git@codeberg.org:reHLDS/ReGameDLL_CS.git",  gitlab: "git@gitlab.com:rehlds/ReGameDLL_CS.git"}
-          - {github: "https://github.com/rehlds/metamod-r.git", bitbucket: "git@bitbucket.org:rehlds-dev/metamod-r.git", codeberg: "git@codeberg.org:reHLDS/metamod-r.git",  gitlab: "git@gitlab.com:rehlds/metamod-r.git"}
-          - {github: "https://github.com/rehlds/reapi.git", bitbucket: "git@bitbucket.org:rehlds-dev/reapi.git", codeberg: "git@codeberg.org:reHLDS/reapi.git",  gitlab: "git@gitlab.com:rehlds/reapi.git"}
-          - {github: "https://github.com/rehlds/rechecker.git", bitbucket: "git@bitbucket.org:rehlds-dev/rechecker.git", codeberg: "git@codeberg.org:reHLDS/rechecker.git",  gitlab: "git@gitlab.com:rehlds/rechecker.git"}
-          - {github: "https://github.com/rehlds/resemiclip.git", bitbucket: "git@bitbucket.org:rehlds-dev/resemiclip.git", codeberg: "git@codeberg.org:reHLDS/resemiclip.git",  gitlab: "git@gitlab.com:rehlds/resemiclip.git"}
-          - {github: "https://github.com/rehlds/reunion.git", bitbucket: "git@bitbucket.org:rehlds-dev/reunion.git", codeberg: "git@codeberg.org:reHLDS/reunion.git",  gitlab: "git@gitlab.com:rehlds/reunion.git"}
-          - {github: "https://github.com/rehlds/revoice.git", bitbucket: "git@bitbucket.org:rehlds-dev/revoice.git", codeberg: "git@codeberg.org:reHLDS/revoice.git",  gitlab: "git@gitlab.com:rehlds/revoice.git"}
-          - {github: "https://github.com/rehlds/relocalizebugfix.git", bitbucket: "git@bitbucket.org:rehlds-dev/relocalizebugfix.git", codeberg: "git@codeberg.org:reHLDS/relocalizebugfix.git",  gitlab: "git@gitlab.com:rehlds/relocalizebugfix.git"}
-          - {github: "https://github.com/rehlds/hitboxtracker.git", bitbucket: "git@bitbucket.org:rehlds-dev/hitboxtracker.git", codeberg: "git@codeberg.org:reHLDS/hitboxtracker.git",  gitlab: "git@gitlab.com:rehlds/hitboxtracker.git"}
-          - {github: "https://github.com/rehlds/testdemos.git", bitbucket: "git@bitbucket.org:rehlds-dev/testdemos.git", codeberg: "git@codeberg.org:reHLDS/testdemos.git",  gitlab: "git@gitlab.com:rehlds/testdemos.git"}
-          - {github: "https://github.com/rehlds/rehlds.github.io.git", bitbucket: "git@bitbucket.org:rehlds-dev/rehlds.github.io.git", codeberg: "git@codeberg.org:reHLDS/rehlds.github.io.git",  gitlab: "git@gitlab.com:rehlds/rehlds.github.io.git"}
-          - {github: "https://github.com/rehlds/metamod-r.org.git", bitbucket: "git@bitbucket.org:rehlds-dev/metamod-r.org.git", codeberg: "git@codeberg.org:reHLDS/metamod-r.org.git",  gitlab: "git@gitlab.com:rehlds/metamod-r.org.git"}
-          - {github: "https://github.com/rehlds/metamod-r-game-tests.git", bitbucket: "git@bitbucket.org:rehlds-dev/metamod-r-game-tests.git", codeberg: "git@codeberg.org:reHLDS/metamod-r-game-tests.git",  gitlab: "git@gitlab.com:rehlds/metamod-r-game-tests.git"}
+          - {github: "https://github.com/rehlds/.github.git", bitbucket: "git@bitbucket.org:rehlds/.github.git", codeberg: "git@codeberg.org:reHLDS/.github.git",  gitlab: "git@gitlab.com:rehlds/dot-github.git"}
+          - {github: "https://github.com/rehlds/rehlds.git", bitbucket: "git@bitbucket.org:rehlds/rehlds.git", codeberg: "git@codeberg.org:reHLDS/rehlds.git",  gitlab: "git@gitlab.com:rehlds/rehlds.git"}
+          - {github: "https://github.com/rehlds/ReGameDLL_CS.git", bitbucket: "git@bitbucket.org:rehlds/regamedll_cs.git", codeberg: "git@codeberg.org:reHLDS/ReGameDLL_CS.git",  gitlab: "git@gitlab.com:rehlds/ReGameDLL_CS.git"}
+          - {github: "https://github.com/rehlds/metamod-r.git", bitbucket: "git@bitbucket.org:rehlds/metamod-r.git", codeberg: "git@codeberg.org:reHLDS/metamod-r.git",  gitlab: "git@gitlab.com:rehlds/metamod-r.git"}
+          - {github: "https://github.com/rehlds/reapi.git", bitbucket: "git@bitbucket.org:rehlds/reapi.git", codeberg: "git@codeberg.org:reHLDS/reapi.git",  gitlab: "git@gitlab.com:rehlds/reapi.git"}
+          - {github: "https://github.com/rehlds/rechecker.git", bitbucket: "git@bitbucket.org:rehlds/rechecker.git", codeberg: "git@codeberg.org:reHLDS/rechecker.git",  gitlab: "git@gitlab.com:rehlds/rechecker.git"}
+          - {github: "https://github.com/rehlds/resemiclip.git", bitbucket: "git@bitbucket.org:rehlds/resemiclip.git", codeberg: "git@codeberg.org:reHLDS/resemiclip.git",  gitlab: "git@gitlab.com:rehlds/resemiclip.git"}
+          - {github: "https://github.com/rehlds/reunion.git", bitbucket: "git@bitbucket.org:rehlds/reunion.git", codeberg: "git@codeberg.org:reHLDS/reunion.git",  gitlab: "git@gitlab.com:rehlds/reunion.git"}
+          - {github: "https://github.com/rehlds/revoice.git", bitbucket: "git@bitbucket.org:rehlds/revoice.git", codeberg: "git@codeberg.org:reHLDS/revoice.git",  gitlab: "git@gitlab.com:rehlds/revoice.git"}
+          - {github: "https://github.com/rehlds/relocalizebugfix.git", bitbucket: "git@bitbucket.org:rehlds/relocalizebugfix.git", codeberg: "git@codeberg.org:reHLDS/relocalizebugfix.git",  gitlab: "git@gitlab.com:rehlds/relocalizebugfix.git"}
+          - {github: "https://github.com/rehlds/hitboxtracker.git", bitbucket: "git@bitbucket.org:rehlds/hitboxtracker.git", codeberg: "git@codeberg.org:reHLDS/hitboxtracker.git",  gitlab: "git@gitlab.com:rehlds/hitboxtracker.git"}
+          - {github: "https://github.com/rehlds/testdemos.git", bitbucket: "git@bitbucket.org:rehlds/testdemos.git", codeberg: "git@codeberg.org:reHLDS/testdemos.git",  gitlab: "git@gitlab.com:rehlds/testdemos.git"}
+          - {github: "https://github.com/rehlds/rehlds.github.io.git", bitbucket: "git@bitbucket.org:rehlds/rehlds.github.io.git", codeberg: "git@codeberg.org:reHLDS/rehlds.github.io.git",  gitlab: "git@gitlab.com:rehlds/rehlds.github.io.git"}
+          - {github: "https://github.com/rehlds/metamod-r.org.git", bitbucket: "git@bitbucket.org:rehlds/metamod-r.org.git", codeberg: "git@codeberg.org:reHLDS/metamod-r.org.git",  gitlab: "git@gitlab.com:rehlds/metamod-r.org.git"}
+          - {github: "https://github.com/rehlds/metamod-r-game-tests.git", bitbucket: "git@bitbucket.org:rehlds/metamod-r-game-tests.git", codeberg: "git@codeberg.org:reHLDS/metamod-r-game-tests.git",  gitlab: "git@gitlab.com:rehlds/metamod-r-game-tests.git"}
 
     steps:
       - name: Set up SSH key

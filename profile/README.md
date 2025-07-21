@@ -128,7 +128,7 @@ The HLDS reverse-engineering community is dedicated to improving Half-Life Dedic
 
 ### Our Read-only mirrors outside GitHub:
 
-- https://bitbucket.org/rehlds-dev
+- https://bitbucket.org/rehlds
 - https://codeberg.org/reHLDS
 - https://git.epicm.org/reHLDS
 - https://gitlab.com/reHLDS
