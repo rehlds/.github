@@ -1,0 +1,5 @@
+*.fig binary diff=fig
+*.ai binary diff=ai
+*.psd binary diff=psd
+*.zip binary diff=zip
+*.pdf binary diff=pdf
